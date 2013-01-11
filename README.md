@@ -19,11 +19,11 @@ Given tables:
 Write the queries for:
 
 1. get all statuses, not repeating, alphabetically ordered
-    ''' sql
-    SELECT DISTINCT status FROM tasks ORDER BY status;
-    '''
+        ''' sql
+          SELECT DISTINCT status FROM tasks ORDER BY status;
+        '''
 2. get the count of all tasks in each project, order by tasks count descending
-    SELECT COUNT(*) AS amount FROM tasks GROUP BY project_id ORDER BY amount DESC;
+          SELECT COUNT(*) AS amount FROM tasks GROUP BY project_id ORDER BY amount DESC;
 
 3. get the count of all tasks in each project, order by projects names
     SELECT COUNT(*) AS amount, projects.name FROM tasks INNER JOIN projects ON project_id = projects.id GROUP BY projects.name ORDER BY projects.name ASC;
