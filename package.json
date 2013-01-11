@@ -1,0 +1,31 @@
+{
+	"name": "node-TODO-testtask",
+	"version": "0.0.1",
+	"private": true,
+	"dependencies": {
+		"express": "3.x",
+		"jade": ">= 0.0.1",
+		"stylus" : ">= 0.28.2",
+		"nib" : ">= 0.8.2",
+		"bootstrap-stylus" : ">= 0.2.1",
+		"coffee-script": ">= 1.3.3",
+		"connect-assets": ">= 2.3.3",
+		"promised-io": ">= 0.3.0",
+    "mysql": "2.0.0-alpha5"
+	},
+
+	"devDependencies" : {
+		"mocha" : "*",
+		"should" : "*",
+		"supertest" : "*",
+		"grunt-exec" : "*"
+	},
+
+	"subdomain": "epxress",
+	"scripts": {
+		"start": "app.coffee"
+	},
+	"engines": {
+		"node": "0.8.x"
+	}
+}

@@ -1,0 +1,28 @@
+extends base-layout
+
+block append scripts
+  script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js')      
+  != js('login')
+
+block append head
+  != css('login')
+
+block content  
+
+  div#flash
+    = flash
+  form.form-horizontal#login
+    fieldset
+      legend Sign in with your username
+      .control-group
+        label.control-label(for='inputUsername') Username
+        .controls
+          input#username(type='text', placeholder='Type in your username')
+      .control-group
+        label.control-label(for='inputPassword') Password
+        .controls
+          input#password(type='password', placeholder='Password')
+      span.help-block In case you don't have an account, please 
+        a(href='#', class='register') create one
+        .
+      button.btn(type='submit') Submit    
