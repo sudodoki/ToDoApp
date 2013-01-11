@@ -1,16 +1,21 @@
-Using github.com/maxatwork/expressjs_template with 
-https://github.com/felixge/node-mysql to create proof-of-concept ToDoApp.
-Node + ExpressJS + Coffeescript + Stylus + Twitter bootstrap + Jade + assets pipeline + Mocha + Should + Supertest project template.
+#Ruby Garage Test Exercise
+## www part
+On sunny day can be found over [here]:(https://dashboard.dotcloud.com/applications/todoapp/logs)
+
+Using [*github.com/maxatwork/expressjs_template*]:(https://github.com/maxatwork/expressjs_template) with 
+[*https://github.com/felixge/node-mysql*]:(https://github.com/felixge/node-mysql) to create proof-of-concept ToDoApp.
+*Node* + *ExpressJS* + *Coffeescript* + *Stylus* + *Twitter bootstrap* + *Jade* + assets pipeline + Mocha + Should + Supertest project template.
 Feel free to fork.
 
-SQL task:
+##SQL task:
 Given tables:
 tasks (id, name, status, project_id)
 projects (id, name)
 Write the queries for:
 get all statuses, not repeating, alphabetically ordered
+'''sql
 SELECT DISTINCT status FROM tasks ORDER BY status;
-
+'''
 get the count of all tasks in each project, order by tasks count descending
 SELECT COUNT(*) AS amount FROM tasks GROUP BY project_id ORDER BY amount DESC;
 
