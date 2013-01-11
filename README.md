@@ -3,7 +3,7 @@ Ruby Garage Test Exercise
 The www part
 -------------------------
 
-On sunny day can be found over [here]:(https://dashboard.dotcloud.com/applications/todoapp/logs)
+On sunny day can be found over [here](https://dashboard.dotcloud.com/applications/todoapp/logs)
 
 Using [github.com/maxatwork/expressjs_template](https://github.com/maxatwork/expressjs_template/) with 
 [https://github.com/felixge/node-mysql](https://github.com/felixge/node-mysql) to create proof-of-concept ToDoApp.
